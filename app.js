@@ -1,18 +1,21 @@
 const express = require('express');
 const app = express();
 
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const morgan =require('morgan');
 const mongoose = require('mongoose');
+
 
 // middleware
 app.use(express.json());
 // app.use(bodyParser.json());
 app.use(morgan('tiny'));
+app.use('/public/uploads',express.static(__dirname+'/public/uploads'));
 
 // Routes
 
 const categoriesRoutes= require('./routes/categories');
+const productRoutes= require('./routes/products')
 const orderRoutes= require('./routes/orders');
 
 // const productSchema= mongoose.Schema({
@@ -29,6 +32,7 @@ const api = process.env.API_URL;
 
 app.use(`${api}/categories`, categoriesRoutes);
 app.use(`${api}/orders`,orderRoutes);
+app.use(`${api}/products`,productRoutes);
 
 // app.get(`${api}/products`, (req, res)=>{
 //     const product={
