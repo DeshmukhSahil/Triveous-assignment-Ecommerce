@@ -63,7 +63,7 @@ To login and obtain the authentication token:
 
 - **POST** /api/v1/users/login
 
-## Deployment link: https://ecombackend-i8aa.onrender.com/
+## Deployment link: https://ecom-backend-tdhb.onrender.com/
 
 ## Thank you...
 
