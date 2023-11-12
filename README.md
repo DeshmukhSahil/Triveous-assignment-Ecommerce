@@ -75,6 +75,11 @@ To login and obtain the authentication token:
 
 # Deployment link might not work effeciently with some Apis because of some compatiblity issue with the dependencies at the server (working on it), however, every API works perfectly fine on localhost.
 
+
+#### APIs testing using postman walkthrough
+
+https://drive.google.com/file/d/13HwZmt6sADJ19Ni2pBwtjihKnI64tOJ7/view?usp=sharing
+
 ## Thank you...
 
 Looking forward to hear from you..
