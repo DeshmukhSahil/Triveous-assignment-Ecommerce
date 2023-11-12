@@ -51,6 +51,14 @@ npm start
 - **DELETE** /api/v1/users/:id
 - **GET** users count: /api/v1/users/get/count
 
+### Categories
+
+#   /api/v1/categories
+
+# category ID is needed while posting a product
+
+## Token is also needed for most of the routes
+
 ### User Authentication
 
 #### Register new user
@@ -64,6 +72,8 @@ To login and obtain the authentication token:
 - **POST** /api/v1/users/login
 
 ## Deployment link: https://ecom-backend-tdhb.onrender.com/
+
+# Deployment link might not work effeciently with some Apis because of some compatiblity issue with the dependencies at the server (working on it), however, every API works perfectly fine on localhost.
 
 ## Thank you...
 
